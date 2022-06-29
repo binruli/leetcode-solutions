@@ -1,5 +1,5 @@
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
+    def removeElement(self, nums: int, val: int) -> int:
         for numbers in range(len(nums)):
             if val not in nums:
                 break
