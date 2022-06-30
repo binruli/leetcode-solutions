@@ -3,15 +3,7 @@ class Solution:
         myset = set()
         count = 0
         for i in arr:
-            if i == 0:
-                count +=1
-                if count >=2:
-                    return True
-            else:
-                myset.add(i)
-                
-        for j in myset:
-            if j*2 in myset:
+            if i*2 in myset or i/2 in myset:
                 return True
-            
+            myset.add(i)
         return False
